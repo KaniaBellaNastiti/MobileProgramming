@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import '../model/pegawai.dart';
+=======
+<<<<<<< HEAD
+import 'package:klinik_app/model/pegawai.dart';
+import 'package:klinik_app/ui/pegawai_form.dart';
+=======
+import '../model/pegawai.dart';
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
+>>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
 import 'pegawai_detail.dart';
 
 class PagePegawai extends StatefulWidget {
@@ -46,6 +55,24 @@ class _PagePegawaiState extends State<PagePegawai> {
             "Data Pegawai",
             style: TextStyle(color: Colors.white),
           ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          actions: [
+            GestureDetector(
+              child: const Icon(
+                Icons.add,
+                color: Colors.white,
+              ),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: ((context) => PegawaiForm())));
+              },
+            )
+          ],
+=======
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
+>>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
           backgroundColor: Colors.blue),
       body: ListView.builder(
         itemCount: _pegawai.length,

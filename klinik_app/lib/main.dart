@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:klinik_app/ui/pasien_page.dart';
+=======
+<<<<<<< HEAD
+import 'package:klinik_app/ui/pegawai_page.dart' show PagePegawai;
+=======
+import 'package:klinik_app/ui/pasien_page.dart';
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
+>>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
 
 void main() {
   runApp(MyApp());
@@ -9,8 +17,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+<<<<<<< HEAD
       title: 'Data Pasien',
       home: PagePasien(),
+=======
+<<<<<<< HEAD
+      title: ' Data Pegawai',
+      debugShowCheckedModeBanner: false,
+      home: PagePegawai(),
+=======
+      title: 'Data Pasien',
+      home: PagePasien(),
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
+>>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
     );
   }
 }

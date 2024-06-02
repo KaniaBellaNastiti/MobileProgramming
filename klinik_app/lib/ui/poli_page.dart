@@ -1,15 +1,62 @@
 import 'package:flutter/material.dart';
 import '../model/poli.dart';
 import 'poli_detail.dart';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import 'poli_item.dart';
+import 'poli_form.dart';
+=======
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
+>>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
 
 class PoliPage extends StatefulWidget {
   const PoliPage({super.key});
 
+<<<<<<< HEAD
   @override
+=======
+<<<<<<< HEAD
+=======
+  @override
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
+>>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
   State<PoliPage> createState() => _PoliPageState();
 }
 
 class _PoliPageState extends State<PoliPage> {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          "Data Poli",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.blue,
+        actions: [
+          GestureDetector(
+            child: const Icon(Icons.add),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => PoliForm()));
+            },
+          )
+        ],
+      ),
+      body: ListView(
+        children: [
+          PoliItem(poli: Poli(namaPoli: "Poli Anak")),
+          PoliItem(poli: Poli(namaPoli: "Poli Kandungan")),
+          PoliItem(poli: Poli(namaPoli: "Poli Gigi")),
+          PoliItem(poli: Poli(namaPoli: "Poli THT")),
+        ],
+      ),
+    );
+=======
+>>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,5 +95,9 @@ class _PoliPageState extends State<PoliPage> {
         ],
       ),
     );   
+<<<<<<< HEAD
+=======
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
+>>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
   }
 }

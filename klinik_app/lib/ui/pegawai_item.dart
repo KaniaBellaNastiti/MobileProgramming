@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+import '../model/pegawai.dart';
+import 'pegawai_detail.dart';
+
+class PegawaiItem extends StatelessWidget {
+  final Pegawai pegawai;
+
+  const PegawaiItem({super.key, required this.pegawai});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Nip                   : ${pegawai.nip}'),
+          SizedBox(height: 8.0),
+          Text('Nama                  : ${pegawai.nama}'),
+          SizedBox(height: 8.0),
+          Text('Tanggal_lahir         : ${pegawai.tanggal_lahir}'),
+          SizedBox(height: 8.0),
+          Text('Nomor Telepon        : ${pegawai.nomor_telepon.toString()}'),
+          SizedBox(height: 8.0),
+          Text('Email                 : ${pegawai.email}'),
+          SizedBox(height: 8.0),
+          Text('Password              : ${pegawai.password}'),
+          SizedBox(height: 8.0),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                child: const Text(
+                  "Ubah",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                child: const Text(
+                  "Hapus",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}
