@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:klinik_app/model/pegawai.dart';
 import 'package:klinik_app/ui/pegawai_form.dart';
+=======
+import '../model/pegawai.dart';
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
 import 'pegawai_detail.dart';
 
 class PagePegawai extends StatefulWidget {
@@ -47,6 +51,7 @@ class _PagePegawaiState extends State<PagePegawai> {
             "Data Pegawai",
             style: TextStyle(color: Colors.white),
           ),
+<<<<<<< HEAD
           actions: [
             GestureDetector(
               child: const Icon(
@@ -59,6 +64,8 @@ class _PagePegawaiState extends State<PagePegawai> {
               },
             )
           ],
+=======
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
           backgroundColor: Colors.blue),
       body: ListView.builder(
         itemCount: _pegawai.length,

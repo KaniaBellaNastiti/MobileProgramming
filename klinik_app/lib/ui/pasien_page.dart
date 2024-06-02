@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:klinik_app/model/pasien.dart';
+<<<<<<< HEAD
 import 'package:klinik_app/ui/pasien_form.dart';
+=======
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
 import 'pasien_detail.dart';
 
 class PagePasien extends StatefulWidget {
@@ -17,6 +20,7 @@ class _PagePasienState extends State<PagePasien> {
       nomor_rm: '05',
       nama: 'Marshella Putri',
       tanggal_lahir: '2003-08-12',
+<<<<<<< HEAD
       nomor_telepon: '085467234987',
       alamat: 'Sleman',
     ),
@@ -34,6 +38,25 @@ class _PagePasienState extends State<PagePasien> {
       nama: 'Areksa Adelio',
       tanggal_lahir: '2000-07-03',
       nomor_telepon: '085946728109',
+=======
+      nomor_telepon: 085467234987,
+      alamat: 'Sleman',
+    ),
+    Pasien(
+      id: 1,
+      nomor_rm: '07',
+      nama: 'Alvaro  Narendra',
+      tanggal_lahir: '2002-02-12',
+      nomor_telepon: 085036485927,
+      alamat: 'Bantul',
+    ),
+    Pasien(
+      id: 1,
+      nomor_rm: '09',
+      nama: 'Areksa Adelio',
+      tanggal_lahir: '2000-07-03',
+      nomor_telepon: 085946728109,
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
       alamat: 'Kulon Progo',
     ),
   ];
@@ -46,6 +69,7 @@ class _PagePasienState extends State<PagePasien> {
             "Data Pasien",
             style: TextStyle(color: Colors.white),
           ),
+<<<<<<< HEAD
           actions: [
             GestureDetector(
               child: const Icon(
@@ -66,11 +90,25 @@ class _PagePasienState extends State<PagePasien> {
               child: ListTile(
             title: Text(_pasien[index].nama),
             subtitle: Text('No.RM : ${_pasien[index].nomor_rm}'),
+=======
+          backgroundColor: Colors.blue),
+      body: ListView.builder(
+        itemCount: _pasien.length,
+        itemBuilder: (context, Index) {
+          return Card(
+              child: ListTile(
+            title: Text(_pasien[Index].nama),
+            subtitle: Text('No.rm : ${_pasien[Index].nomor_rm}'),
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
+<<<<<<< HEAD
                   builder: (context) => PasienDetail(pasien: _pasien[index]),
+=======
+                  builder: (context) => PasienDetail(pasien: _pasien[Index]),
+>>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
                 ),
               );
             },
