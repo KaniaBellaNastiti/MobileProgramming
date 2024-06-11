@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:klinik_app/model/pegawai.dart';
 import 'package:klinik_app/ui/pegawai_form.dart';
-=======
-import '../model/pegawai.dart';
->>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
 import 'pegawai_detail.dart';
 
 class PagePegawai extends StatefulWidget {
@@ -16,29 +12,29 @@ class PagePegawai extends StatefulWidget {
 class _PagePegawaiState extends State<PagePegawai> {
   final List<Pegawai> _pegawai = [
     Pegawai(
-      id: 1,
+      id: '1',
       nip: '19211051',
       nama: 'Adrian Bastian',
       tanggal_lahir: '2002-09-07',
-      nomor_telepon: 085678435672,
+      nomor_telepon: '085678435672',
       email: 'adrian@gmail.com',
       password: '51ppdrbas',
     ),
     Pegawai(
-      id: 2,
+      id: '2',
       nip: '19211052',
       nama: 'Mutiara Salsabila',
       tanggal_lahir: '2002-04-03',
-      nomor_telepon: 085123495839,
+      nomor_telepon: '085123495839',
       email: 'mutiara@gmail.com',
       password: '52ppmutla',
     ),
     Pegawai(
-      id: 3,
+      id: '3',
       nip: '19211053',
       nama: 'Jonathan Kenzo',
       tanggal_lahir: '2002-08-02',
-      nomor_telepon: 085038292712,
+      nomor_telepon: '085038292712',
       email: 'jonathan@gmail.com',
       password: '53ppjohkzo',
     ),
@@ -51,7 +47,6 @@ class _PagePegawaiState extends State<PagePegawai> {
             "Data Pegawai",
             style: TextStyle(color: Colors.white),
           ),
-<<<<<<< HEAD
           actions: [
             GestureDetector(
               child: const Icon(
@@ -64,8 +59,6 @@ class _PagePegawaiState extends State<PagePegawai> {
               },
             )
           ],
-=======
->>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
           backgroundColor: Colors.blue),
       body: ListView.builder(
         itemCount: _pegawai.length,

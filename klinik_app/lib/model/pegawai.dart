@@ -1,9 +1,9 @@
 class Pegawai {
-  final int id;
+  final String id;
   final String nip;
   final String nama;
   final String tanggal_lahir;
-  final int nomor_telepon;
+  final String nomor_telepon;
   final String email;
   final String password;
 

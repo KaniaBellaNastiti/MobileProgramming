@@ -9,46 +9,28 @@ class PegawaiItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(16.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Nip                   : ${pegawai.nip}'),
-          SizedBox(height: 8.0),
-          Text('Nama                  : ${pegawai.nama}'),
-          SizedBox(height: 8.0),
-          Text('Tanggal_lahir         : ${pegawai.tanggal_lahir}'),
-          SizedBox(height: 8.0),
-          Text('Nomor Telepon        : ${pegawai.nomor_telepon.toString()}'),
-          SizedBox(height: 8.0),
-          Text('Email                 : ${pegawai.email}'),
-          SizedBox(height: 8.0),
-          Text('Password              : ${pegawai.password}'),
-          SizedBox(height: 8.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return GestureDetector(
+      child: Card(
+        child: ListTile(
+          title: Text(pegawai.nama),
+          subtitle: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-                child: const Text(
-                  "Ubah",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                child: const Text(
-                  "Hapus",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
+              Text("Nomor RM: ${pegawai.nip}"),
+              Text("Tanggal Lahir: ${pegawai.tanggal_lahir}"),
+              Text("Nomor Telpon: ${pegawai.nomor_telepon}"),
+              Text("Alamat: ${pegawai.email}"),
             ],
-          )
-        ],
+          ),
+        ),
       ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => PegawaiDetail(pegawai: pegawai)),
+        );
+      },
     );
   }
 }

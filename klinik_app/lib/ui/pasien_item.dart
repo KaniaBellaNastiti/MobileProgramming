@@ -9,46 +9,27 @@ class PasienItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(16.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Id                : ${pasien.id}'),
-          SizedBox(height: 8.0),
-          Text('No.RM             : ${pasien.nomor_rm}'),
-          SizedBox(height: 8.0),
-          Text('Nama              : ${pasien.nama}'),
-          SizedBox(height: 8.0),
-          Text('Tanggal Lahir     : ${pasien.tanggal_lahir}'),
-          SizedBox(height: 8.0),
-          Text('Nomor Telepon     : ${pasien.nomor_telepon}'),
-          SizedBox(height: 8.0),
-          Text('Alamat            : ${pasien.alamat}'),
-          SizedBox(height: 8.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return GestureDetector(
+      child: Card(
+        child: ListTile(
+          title: Text(pasien.nama),
+          subtitle: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-                child: const Text(
-                  "Ubah",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                child: const Text(
-                  "Hapus",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
+              Text("Nomor RM: ${pasien.nomor_rm}"),
+              Text("Tanggal Lahir: ${pasien.tanggal_lahir}"),
+              Text("Nomor Telpon: ${pasien.nomor_telepon}"),
+              Text("Alamat: ${pasien.alamat}"),
             ],
-          )
-        ],
+          ),
+        ),
       ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => PasienDetail(pasien: pasien)),
+        );
+      },
     );
   }
 }
