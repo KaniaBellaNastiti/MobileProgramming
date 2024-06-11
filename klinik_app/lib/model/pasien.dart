@@ -3,19 +3,7 @@ class Pasien {
   final String nomor_rm;
   final String nama;
   final String tanggal_lahir;
-<<<<<<< HEAD
   final String nomor_telepon;
-=======
-<<<<<<< HEAD
-  final int nomor_telepon;
-=======
-<<<<<<< HEAD
-  final String nomor_telepon;
-=======
-  final int nomor_telepon;
->>>>>>> 674e1c88f7aa89e57bf239ba656c12022de8db78
->>>>>>> 087b7dc5577505f38b269441a79296ab2ff7aeea
->>>>>>> dee81d155ad921f5ad855604e31d551935f29dbb
   final String alamat;
 
   Pasien({
